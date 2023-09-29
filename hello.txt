@@ -1,0 +1,19 @@
+printf("rows is %d", rows);
+	printf("cols is %d", cols);	
+	if (n = 90){
+	//first, transpose the array
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0 ; j < cols; j++){
+			int temp = 0;
+			//turn each col to a row and row to a col by swapping the indices
+			//store element to swap in temp variable first 
+			temp = arr[i][j];
+			printf("temp is %d\n", temp);	
+			arr[i][j] = arr[j][i];
+			arr[j][i] = temp;
+			printf("new number is %d\n", arr[j][i]);
+		
+		}
+	}
+	}
+	printf("\n");
